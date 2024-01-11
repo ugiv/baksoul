@@ -11,7 +11,7 @@ import dotMaps from '../image/dot-maps.png';
 export default function Home(){
     return (
         <div className="home w-full h-full items-center">
-            <div style={{backgroundColor: "#E4D52E"}} className="w-full h-full flex flex-col justify-center items-center relative">
+            <div style={{backgroundColor: "#E4D52E"}} className="w-full min-h-750 h-full flex flex-col justify-center items-center relative">
                 <div className="header flex flex-row justify-center items-center w-10/12 h-24 absolute top-0">
                     <div className="menu flex flex-row justify-between w-1/5 absolute left-0 font-bold hidden md:flex">
                         <p>Tentang</p>
@@ -29,7 +29,7 @@ export default function Home(){
                         <img className="w-8" src={bowl} alt="bowl" />
                     </div>
                 </div>
-                <div className="content w-10/12 h-full flex flex-col justify-center items-center md:pt-16 md:flex-wrap-reverse md:h-5/6">
+                <div className="content w-10/12 h-10/12 flex flex-col justify-between items-center md:justify-center md:pt-16 md:flex-wrap-reverse md:h-5/6">
                     <img className="w-11/12 max-w-md md:max-w-none my-6 md:w-6/12" src={hero} alt="hero" />
                     <div className="flex flex-col justify-center items-start w-full max-w-md md:max-w-none md:w-6/12">
                         <h1 className="font-figtree text-3xl sm:text-5xl lg:text-6xl text-left font-bold md:leading-relaxed">Bakso bulat seperti tekad kamu.</h1>
@@ -37,7 +37,7 @@ export default function Home(){
                         <button className="px-4 py-2 bg-black text-white font-bold rounded-lg mt-8">Temukan</button>
                     </div>
                 </div>
-                <div className="bottom-0 mt-20 md:mt-0 w-10/12 absoulte flex flex-col items-center md:items-start">
+                <div className="bottom-6 md:mt-0 w-10/12 flex flex-col items-center absolute md:items-start">
                     <p className="text-center md:text-left">Tersedia:</p>
                     <div className="temukan flex flex-row w-10/12 md:w-1/5 justify-between items-center font-bold">
                         <p>Gofood</p>
@@ -74,8 +74,8 @@ export default function Home(){
             <div className="location w-full h-auto pb-10 flex flex-col items-center" style={{backgroundImage: 'linear-gradient(180deg, #F5F5F5, white)'}}>
                 <h3 className="text-2xl font-bold py-4">Lokasi</h3>
                 <img className="w-2/6 mt-4" src={dotMaps} alt="maps" />
-                <div className="scroll-page w-10/12 overflow-x-scroll">
-                    <div className="flex flex-row justify-between w-11/12 w-950 md:w-full mt-4">
+                <div className="scroll-page w-full md:w-10/12 overflow-x-scroll md:overflow-x-visible">
+                    <div className="flex flex-row justify-between w-1050 md:w-full mt-4 px-9 py-10">
                         <div className="w-300 bg-white text-left p-4 rounded-xl shadow-lg">
                             <h4 className="text-2xl font-bold py-2">Mall of Indonesia</h4>
                             <p>Jl. Boulevard Bar. Raya No.12, RT.18/RW.19, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240</p>
@@ -94,7 +94,7 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-            <footer className="p-6">©Copyright 2023 PT. Bakso Prima Nusantara. All rights reserved.</footer>
+            <footer className="p-6 text-sm md:text-2xl">©Copyright 2023 PT. Bakso Prima Nusantara. All rights reserved.</footer>
         </div>
     )
 }
