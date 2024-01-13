@@ -11,21 +11,21 @@ import dotMaps from '../image/dot-maps.png';
 export default function Home(){
     return (
         <div className="home w-full h-full items-center">
-            <div style={{backgroundColor: "#E4D52E"}} className="w-full min-h-750 h-full flex flex-col justify-center items-center relative">
+            <div style={{backgroundColor: "#E4D52E"}} className="w-full h-full min-h-750 max-h-950 flex flex-col justify-center items-center relative">
                 <div className="header flex flex-row justify-center items-center w-10/12 h-24 absolute top-0">
-                    <div className="menu flex flex-row justify-between w-1/5 absolute left-0 font-bold hidden md:flex">
+                    <div className="menu flex flex-row justify-between w-1/5 absolute left-0 font-bold hidden lg:flex">
                         <p>Tentang</p>
                         <p>Menu</p>
                         <p>Lokasi</p>
                     </div>
-                    <div className="burger absolute left-0 flex flex-col h-4 justify-between items-start md:hidden">
+                    <div className="burger absolute left-0 flex flex-col h-4 justify-between items-start lg:hidden">
                         <div className="line w-6 border border-black rounded"></div>
                         <div className="line w-5 border border-black rounded"></div>
                         <div className="line w-4 border border-black rounded"></div>
                     </div>
                     <h2 className="font-lato text-2xl md:text-4xl font-extrabold tracking-widest">BAKSOUL</h2>
                     <div className="beli-bakso flex flex-row items-center border-2 md:border-4 border-black rounded px-1 md:px-3 absolute right-0 font-bold">
-                        <p className="hidden md:block">Beli Bakso</p>
+                        <p className="hidden lg:block">Beli Bakso</p>
                         <img className="w-8" src={bowl} alt="bowl" />
                     </div>
                 </div>
@@ -37,9 +37,9 @@ export default function Home(){
                         <button className="px-4 py-2 bg-black text-white font-bold rounded-lg mt-8">Temukan</button>
                     </div>
                 </div>
-                <div className="bottom-6 md:mt-0 w-10/12 flex flex-col items-center absolute md:items-start">
-                    <p className="text-center md:text-left">Tersedia:</p>
-                    <div className="temukan flex flex-row w-10/12 md:w-1/5 justify-between items-center font-bold">
+                <div className="bottom-6 lg:mt-0 w-10/12 flex flex-col items-center absolute lg:items-start">
+                    <p className="text-center lg:text-left">Tersedia:</p>
+                    <div className="temukan flex flex-row w-10/12 md:w-5/12 justify-between items-center font-bold">
                         <p>Gofood</p>
                         <p>GrabFood</p>
                         <p>ShopeeFood</p>
@@ -74,8 +74,8 @@ export default function Home(){
             <div className="location w-full h-auto pb-10 flex flex-col items-center" style={{backgroundImage: 'linear-gradient(180deg, #F5F5F5, white)'}}>
                 <h3 className="text-2xl font-bold py-4">Lokasi</h3>
                 <img className="w-2/6 mt-4" src={dotMaps} alt="maps" />
-                <div className="scroll-page w-full md:w-10/12 overflow-x-scroll md:overflow-x-visible">
-                    <div className="flex flex-row justify-between w-1050 md:w-full mt-4 px-9 py-10">
+                <div className="scroll-page w-full overflow-x-scroll md:w-10/12 xl:overflow-x-visible">
+                    <div className="flex flex-row justify-between w-1050 xl:w-full mt-4 px-1 py-10">
                         <div className="w-300 bg-white text-left p-4 rounded-xl shadow-lg">
                             <h4 className="text-2xl font-bold py-2">Mall of Indonesia</h4>
                             <p>Jl. Boulevard Bar. Raya No.12, RT.18/RW.19, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240</p>
