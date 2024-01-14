@@ -30,16 +30,16 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="content w-10/12 h-10/12 flex flex-col justify-between items-center md:justify-center md:pt-16 md:flex-wrap-reverse md:h-5/6">
-                    <img className="w-11/12 max-w-md md:max-w-none my-6 md:w-6/12" src={hero} alt="hero" />
+                    <img className="w-11/12 max-w-sm md:max-w-none my-6 md:w-6/12" src={hero} alt="hero" />
                     <div className="flex flex-col justify-center items-start w-full max-w-md md:max-w-none md:w-6/12">
-                        <h1 className="font-figtree text-3xl sm:text-5xl lg:text-6xl text-left font-bold md:leading-relaxed">Bakso bulat seperti tekad kamu.</h1>
-                        <p className="text-left mt-4 w-11/12 md:w-8/12 leading-relaxed text-sm md:text-lg">Terbuat dari daging sapi premium Australia yang dipadukan dengan bahan-bahan lokal berkualitas tinggi. </p>
-                        <button className="px-4 py-2 bg-black text-white font-bold rounded-lg mt-8">Temukan</button>
+                        <h1 className="font-roboto text-3xl sm:text-5xl lg:text-6xl text-left font-bold md:leading-loosed">Bakso bulat seperti tekad kamu.</h1>
+                        <p className="text-left my-2 md:my-6 w-11/12 md:w-8/12 leading-relaxed text-sm md:text-lg">Terbuat dari daging sapi premium Australia yang dipadukan dengan bahan-bahan lokal berkualitas tinggi. </p>
+                        <button className="px-4 py-2 bg-black text-white font-bold rounded-lg mt-2 text-sm md:mt-8 md:text-lg">Temukan</button>
                     </div>
                 </div>
                 <div className="bottom-6 lg:mt-0 w-10/12 flex flex-col items-center absolute lg:items-start">
                     <p className="text-center lg:text-left">Tersedia:</p>
-                    <div className="temukan flex flex-row w-10/12 md:w-5/12 justify-between items-center font-bold">
+                    <div className="temukan flex flex-row w-10/12 md:w-5/12 lg:w-4/12 justify-between items-center font-bold">
                         <p>Gofood</p>
                         <p>GrabFood</p>
                         <p>ShopeeFood</p>
@@ -75,7 +75,7 @@ export default function Home(){
                 <h3 className="text-2xl font-bold py-4">Lokasi</h3>
                 <img className="w-2/6 mt-4" src={dotMaps} alt="maps" />
                 <div className="scroll-page w-full overflow-x-scroll md:w-10/12 xl:overflow-x-visible">
-                    <div className="flex flex-row justify-between w-1050 xl:w-full mt-4 px-1 py-10">
+                    <div className="flex flex-row justify-between w-1050 xl:w-full mt-4 px-10 py-10">
                         <div className="w-300 bg-white text-left p-4 rounded-xl shadow-lg">
                             <h4 className="text-2xl font-bold py-2">Mall of Indonesia</h4>
                             <p>Jl. Boulevard Bar. Raya No.12, RT.18/RW.19, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240</p>
@@ -94,7 +94,7 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-            <footer className="p-6 text-sm md:text-2xl">©Copyright 2023 PT. Bakso Prima Nusantara. All rights reserved.</footer>
+            <footer className="p-6 text-sm md:text-xl">©Copyright 2023 PT. Bakso Prima Nusantara. All rights reserved.</footer>
         </div>
     )
 }
