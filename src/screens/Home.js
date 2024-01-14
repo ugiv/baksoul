@@ -1,34 +1,28 @@
-import React from "react"
+import React, { useState } from "react"
 import hero from '../image/Hero.png';
-import bowl from '../image/Soup Plate.png'
 import baksoStandar from '../image/bakso-standar.png';
 import wagyuBomb from '../image/wagyu-bomb.png';
 import tomYum from '../image/tom-yum.png';
 import baksoUrat from '../image/bakso-urat.png';
 import dotMaps from '../image/dot-maps.png';
+import Headers from "../components/Headers";
+import Navigation from "../components/Navigation";
 
 
 export default function Home(){
+    const [show, setShow] = useState(false);
+    const handleSlideNavigation = (props) => {
+        if (props) {
+            setShow(true);
+        } else {
+            setShow(false);
+        }
+    };
     return (
         <div className="home w-full h-full items-center">
+            <Navigation handleShow={show} handleClick={handleSlideNavigation}/>
             <div style={{backgroundColor: "#E4D52E"}} className="w-full h-full min-h-750 max-h-950 flex flex-col justify-center items-center relative">
-                <div className="header flex flex-row justify-center items-center w-10/12 h-24 absolute top-0">
-                    <div className="menu flex flex-row justify-between w-1/5 absolute left-0 font-bold hidden lg:flex">
-                        <p>Tentang</p>
-                        <p>Menu</p>
-                        <p>Lokasi</p>
-                    </div>
-                    <div className="burger absolute left-0 flex flex-col h-4 justify-between items-start lg:hidden">
-                        <div className="line w-6 border border-black rounded"></div>
-                        <div className="line w-5 border border-black rounded"></div>
-                        <div className="line w-4 border border-black rounded"></div>
-                    </div>
-                    <h2 className="font-lato text-2xl md:text-4xl font-extrabold tracking-widest">BAKSOUL</h2>
-                    <div className="beli-bakso flex flex-row items-center border-2 md:border-4 border-black rounded px-1 md:px-3 absolute right-0 font-bold">
-                        <p className="hidden lg:block">Beli Bakso</p>
-                        <img className="w-8" src={bowl} alt="bowl" />
-                    </div>
-                </div>
+                <Headers condition={'normal'} handleClick={handleSlideNavigation} />
                 <div className="content w-10/12 h-10/12 flex flex-col justify-between items-center md:justify-center md:pt-16 md:flex-wrap-reverse md:h-5/6">
                     <img className="w-11/12 max-w-sm md:max-w-none my-6 md:w-6/12" src={hero} alt="hero" />
                     <div className="flex flex-col justify-center items-start w-full max-w-md md:max-w-none md:w-6/12">
