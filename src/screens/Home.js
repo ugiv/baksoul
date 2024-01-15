@@ -39,7 +39,7 @@ export default function Home(){
                 <div className="content w-10/12 h-10/12 flex flex-col justify-between items-center md:justify-center md:pt-16 md:flex-wrap-reverse md:h-5/6">
                     <img className="w-11/12 max-w-sm md:max-w-none my-6 md:w-6/12" src={hero} alt="hero" />
                     <div className="flex flex-col justify-center items-start w-full max-w-md md:max-w-none md:w-6/12">
-                        <h1 className="font-roboto text-3xl sm:text-5xl lg:text-6xl text-left font-bold md:leading-loosed">Bakso bulat seperti tekad kamu.</h1>
+                        <h1 className="font-roboto text-3xl sm:text-5xl lg:text-6xl text-left font-bold sm:leading-snug lg:leading-normal">Bakso bulat seperti tekad kamu.</h1>
                         <p className="text-left my-2 md:my-6 w-11/12 md:w-8/12 leading-relaxed text-sm md:text-lg">Terbuat dari daging sapi premium Australia yang dipadukan dengan bahan-bahan lokal berkualitas tinggi. </p>
                         <button className="px-4 py-2 bg-black text-white font-bold rounded-lg mt-2 text-sm md:mt-8 md:text-lg">Temukan</button>
                     </div>
@@ -57,22 +57,22 @@ export default function Home(){
                 <h3 className="py-10 mt-10 text-2xl font-bold">Menu Populer</h3>
                 <div className="list-menu w-10/12 flex flex-row justify-start items-center flex-wrap">
                     <div className="menu-items flex flex-col justify-center items-center w-2/4 md:w-1/4">
-                        <img className="w-full" src={baksoStandar} alt="bakso-standar" />
+                        <img className="w-4/6 md:w-4/6 my-4" src={baksoStandar} alt="bakso-standar" />
                         <p>Bakso Standar</p>
                         <p className="text-red-500 font-medium">Rp 40k</p>
                     </div>
                     <div className="menu-items flex flex-col justify-center items-center w-2/4 md:w-1/4">
-                        <img className="w-full" src={wagyuBomb} alt="bakso-standar" />
+                        <img className="w-4/6 md:w-4/6 my-4" src={wagyuBomb} alt="bakso-standar" />
                         <p>Wagyu Bomb</p>
                         <p className="text-red-500 font-medium">Rp 40k</p>
                     </div>
                     <div className="menu-items flex flex-col justify-center items-center w-2/4 md:w-1/4">
-                        <img className="w-full" src={tomYum} alt="bakso-standar" />
+                        <img className="w-4/6 md:w-4/6 my-4" src={tomYum} alt="bakso-standar" />
                         <p>Tom Yum</p>
                         <p className="text-red-500 font-medium">Rp 40k</p>
                     </div>
                     <div className="menu-items flex flex-col justify-center items-center w-2/4 md:w-1/4">
-                        <img className="w-full" src={baksoUrat} alt="bakso-standar" />
+                        <img className="w-4/6 md:w-4/6 my-4" src={baksoUrat} alt="bakso-standar" />
                         <p>Bakso Urat</p>
                         <p className="text-red-500 font-medium">Rp 40k</p>
                     </div>

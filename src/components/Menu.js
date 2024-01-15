@@ -7,12 +7,15 @@ export default function Menu({handleDetails}) {
                 <HeadersLogo handleClick={handleDetails}/>
                 <div className="main flex flex-col items-center">
                     <h3 className="font-bold text-lg md:text-xl my-6">Menu</h3>
-                    <div className="flex flex-row justify-between items-center w-4/5 lg:w-3/6 font-medium">
-                        <p>Bakso Standar</p>
-                        <p>Wagyu Bomb</p>
-                        <p>Tom Yum</p>
-                        <p>Bakso Urat</p>
-                        <p>Bakso Bakar</p>
+                    <div className="flex flex-col md:flex-row items-center justify-between md:justify-center md:flex-wrap w-4/5 md:w-3/6 text-sm font-medium">
+                        <p className="w-auto p-2 ">Bakso Standar</p>
+                        <p className="w-auto p-2 ">Wagyu Bomb</p>
+                        <p className="w-auto p-2 ">Tom Yum</p>
+                        <p className="w-auto p-2 ">Bakso Urat</p>
+                        <p className="w-auto p-2 ">Bakso Kangkung</p>
+                        <p className="w-auto p-2 ">Bakso Beranak</p>
+                        <p className="w-auto p-2 ">Bakso Bakar</p>
+                        <p className="w-auto p-2 ">Bakso Kikil</p>
                     </div>
                 </div>
             </div>
