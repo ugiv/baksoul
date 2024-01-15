@@ -64,17 +64,17 @@ export default function Home(){
                     <div className="menu-items flex flex-col justify-center items-center w-2/4 md:w-1/4">
                         <img className="w-4/6 md:w-4/6 my-4" src={wagyuBomb} alt="bakso-standar" />
                         <p>Wagyu Bomb</p>
-                        <p className="text-red-500 font-medium">Rp 40k</p>
+                        <p className="text-red-500 font-medium">Rp 150k</p>
                     </div>
                     <div className="menu-items flex flex-col justify-center items-center w-2/4 md:w-1/4">
                         <img className="w-4/6 md:w-4/6 my-4" src={tomYum} alt="bakso-standar" />
                         <p>Tom Yum</p>
-                        <p className="text-red-500 font-medium">Rp 40k</p>
+                        <p className="text-red-500 font-medium">Rp 70k</p>
                     </div>
                     <div className="menu-items flex flex-col justify-center items-center w-2/4 md:w-1/4">
                         <img className="w-4/6 md:w-4/6 my-4" src={baksoUrat} alt="bakso-standar" />
                         <p>Bakso Urat</p>
-                        <p className="text-red-500 font-medium">Rp 40k</p>
+                        <p className="text-red-500 font-medium">Rp 70k</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-            <footer className="p-6 text-sm md:text-xl">©Copyright 2023 PT. Bakso Prima Nusantara. All rights reserved.</footer>
+            <footer className="p-6 text-sm md:text-lg">©Copyright 2023 PT. Bakso Prima Nusantara. All rights reserved.</footer>
         </div>
     )
 }

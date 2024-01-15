@@ -5,8 +5,8 @@ export default function HeadersMenu({handleClick, handleDetails}) {
         <div className="header flex flex-row justify-center items-center w-10/12 h-24 absolute top-0">
             <div className="menu flex flex-row justify-between w-1/5 absolute left-0 font-bold hidden lg:flex">
                 <p className='cursor-pointer' onClick={() => handleDetails('tentang')}>Tentang</p>
-                <p className='cursor-pointer' onClick={() => handleDetails('menu')}>Menu</p>
                 <p className='cursor-pointer' onClick={() => handleDetails('lokasi')}>Lokasi</p>
+                <p className='cursor-pointer' onClick={() => handleDetails('menu')}>Menu</p>
             </div> 
             <div className="burger absolute left-0 flex flex-col h-4 justify-between items-start lg:hidden" onClick={() => handleClick('flex')}>
                 <div className="line w-6 border border-black rounded"></div>
