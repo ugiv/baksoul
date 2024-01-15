@@ -5,24 +5,37 @@ import wagyuBomb from '../image/wagyu-bomb.png';
 import tomYum from '../image/tom-yum.png';
 import baksoUrat from '../image/bakso-urat.png';
 import dotMaps from '../image/dot-maps.png';
-import Headers from "../components/Headers";
 import Navigation from "../components/Navigation";
+import HeadersMenu from "../components/HeadersMenu";
+import Details from "../components/Details";
 
 
 export default function Home(){
     const [show, setShow] = useState(false);
+    const [details, setDetails] = useState('none');
     const handleSlideNavigation = (props) => {
-        if (props) {
-            setShow(true);
-        } else {
-            setShow(false);
-        }
+        setShow(props);
     };
+    const handleDetails = (props) => {
+        setDetails(props);
+    }
     return (
         <div className="home w-full h-full items-center">
-            <Navigation handleShow={show} handleClick={handleSlideNavigation}/>
+            <Details 
+                    type={details} 
+                    handleDetails={handleDetails}
+            />
+            <Navigation 
+                        handleShow={show} 
+                        handleClick={handleSlideNavigation} 
+                        handleDetails={handleDetails}
+            />
             <div style={{backgroundColor: "#E4D52E"}} className="w-full h-full min-h-750 max-h-950 flex flex-col justify-center items-center relative">
-                <Headers condition={'normal'} handleClick={handleSlideNavigation} />
+                <HeadersMenu 
+                            condition={'normal'} 
+                            handleClick={handleSlideNavigation} 
+                            handleDetails={handleDetails}
+                />
                 <div className="content w-10/12 h-10/12 flex flex-col justify-between items-center md:justify-center md:pt-16 md:flex-wrap-reverse md:h-5/6">
                     <img className="w-11/12 max-w-sm md:max-w-none my-6 md:w-6/12" src={hero} alt="hero" />
                     <div className="flex flex-col justify-center items-start w-full max-w-md md:max-w-none md:w-6/12">
